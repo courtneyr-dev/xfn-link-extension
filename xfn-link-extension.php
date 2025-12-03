@@ -5,6 +5,7 @@
  * Description:       Extends the native Gutenberg link interface to include XFN (XHTML Friends Network) relationship options across all blocks that support links. Features floating toolbar access, Inspector Controls integration, and Link Advanced panel support.
  * Version:           1.0.0
  * Requires at least: 6.4
+ * Tested up to:      6.9
  * Requires PHP:      7.4
  * Author:            Courtney Robertson
  * License:           GPLv2 or later
