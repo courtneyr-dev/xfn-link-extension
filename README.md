@@ -42,6 +42,12 @@ The plugin provides XFN controls in three convenient locations:
 - **Button groups** for easy relationship selection with mutual exclusivity support
 - **Real-time validation** preventing invalid relationship combinations
 
+## Screenshot
+
+![XFN Relationship Link Extension interface showing the floating toolbar with collapsible sections, relationship selection buttons organized by category, and visual relationship pills displaying active selections](.wordpress-org/screenshot-1.png)
+
+*The XFN interface in action: Floating toolbar with expandable relationship categories, button groups for easy selection, and visual pills showing active relationships at a glance.*
+
 ## Requirements
 
 - **WordPress**: 6.4 or higher
