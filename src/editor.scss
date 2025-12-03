@@ -1,0 +1,661 @@
+/**
+ * Editor styles for XFN Link Extension
+ * Inspector Controls, Link Control Integration, AND Toolbar Popover with Collapsible Section
+ */
+
+/* XFN Inspector Panel */
+.xfn-inspector-panel {
+	.components-panel__body-content {
+		padding-top: 0;
+	}
+}
+
+.xfn-panel-description {
+	font-size: 13px;
+	color: #757575;
+	margin: 0 0 16px 0;
+	line-height: 1.4;
+}
+
+/* XFN Category Sections */
+.xfn-category-section {
+	margin-bottom: 20px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #e0e0e0;
+
+	&:last-child {
+		border-bottom: none;
+		margin-bottom: 0;
+	}
+}
+
+.xfn-category-title {
+	font-size: 13px;
+	font-weight: 600;
+	color: #1e1e1e;
+	margin: 0 0 6px 0;
+	line-height: 1.3;
+}
+
+.xfn-category-help {
+	font-size: 12px;
+	color: #757575;
+	margin: 0 0 12px 0;
+	line-height: 1.3;
+}
+
+/* WordPress Component Overrides */
+.xfn-category-section .components-radio-control {
+	margin-bottom: 0;
+
+	.components-radio-control__option {
+		margin-bottom: 6px;
+		font-size: 13px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.components-base-control__help {
+		font-size: 12px;
+		color: #757575;
+		margin-top: 4px;
+	}
+}
+
+.xfn-category-section .components-checkbox-control {
+	margin-bottom: 8px;
+	font-size: 13px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.components-checkbox-control__label {
+		font-size: 13px;
+	}
+}
+
+/* Selected Relationships Summary */
+.xfn-selected-summary {
+	margin-top: 20px;
+	padding: 16px;
+	background: #e7f3ff;
+	border: 1px solid #b3d9ff;
+	border-radius: 4px;
+
+	h4 {
+		font-size: 13px;
+		font-weight: 600;
+		color: #1e1e1e;
+		margin: 0 0 8px 0;
+		line-height: 1.3;
+	}
+}
+
+.xfn-pills {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+}
+
+.xfn-pill {
+	display: inline-block;
+	padding: 4px 8px;
+	font-size: 10px;
+	font-weight: 500;
+	background: #0073aa;
+	color: white;
+	border-radius: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	line-height: 1.2;
+}
+
+/* Category-specific pill colors */
+.xfn-pill-friend,
+.xfn-pill-acquaintance,
+.xfn-pill-contact {
+	background: #00a32a;
+}
+
+.xfn-pill-met {
+	background: #826eb4;
+}
+
+.xfn-pill-co-worker,
+.xfn-pill-colleague {
+	background: #d63638;
+}
+
+.xfn-pill-co-resident,
+.xfn-pill-neighbor {
+	background: #dba617;
+}
+
+.xfn-pill-child,
+.xfn-pill-parent,
+.xfn-pill-sibling,
+.xfn-pill-spouse,
+.xfn-pill-kin {
+	background: #ff6900;
+}
+
+.xfn-pill-muse,
+.xfn-pill-crush,
+.xfn-pill-date,
+.xfn-pill-sweetheart {
+	background: #e91e63;
+}
+
+.xfn-pill-me {
+	background: #1e1e1e;
+}
+
+/* === TOOLBAR POPOVER STYLES === */
+
+.xfn-toolbar-button {
+	min-width: 48px;
+	justify-content: center;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.xfn-toolbar-popover {
+	z-index: 1000001;
+
+	.components-popover__content {
+		min-width: 320px;
+		max-width: 400px;
+		padding: 0;
+		border-radius: 6px;
+		box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+	}
+}
+
+.xfn-toolbar-popover-content {
+	padding: 16px;
+	max-height: 400px;
+	overflow-y: auto;
+}
+
+.xfn-toolbar-header {
+	margin-bottom: 16px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #e0e0e0;
+
+	h3 {
+		font-size: 14px;
+		font-weight: 600;
+		color: #1e1e1e;
+		margin: 0;
+		line-height: 1.3;
+	}
+}
+
+/* === COLLAPSIBLE SECTION STYLES === */
+
+.xfn-collapsible-section {
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	background: #fff;
+	overflow: hidden;
+}
+
+.xfn-section-toggle {
+	display: flex !important;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 12px 16px;
+	background: #f8f9fa;
+	border: none;
+	border-bottom: 1px solid #e0e0e0;
+	font-size: 13px;
+	font-weight: 600;
+	color: #1e1e1e;
+	cursor: pointer;
+	transition: background-color 0.15s ease;
+	text-align: left;
+
+	&:hover {
+		background: #f0f0f0;
+		color: #0073aa;
+	}
+
+	&:focus {
+		box-shadow: inset 0 0 0 1px #0073aa;
+		outline: none;
+	}
+
+	&[aria-expanded="true"] {
+		background: #f0f8ff;
+		color: #0073aa;
+		border-bottom-color: #b3d9ff;
+
+		.xfn-chevron {
+			transform: rotate(180deg);
+		}
+	}
+}
+
+.xfn-count-badge {
+	display: inline-block;
+	margin-left: 8px;
+	padding: 2px 6px;
+	background: #0073aa;
+	color: white;
+	font-size: 10px;
+	font-weight: 500;
+	border-radius: 8px;
+	min-width: 16px;
+	text-align: center;
+	line-height: 1.2;
+}
+
+.xfn-chevron {
+	width: 18px;
+	height: 18px;
+	transition: transform 0.2s ease;
+	flex-shrink: 0;
+	fill: currentColor;
+}
+
+.xfn-section-content {
+	padding: 16px;
+	animation: xfn-expand 0.2s ease-out;
+
+	&[style*="display: none"] {
+		animation: xfn-collapse 0.15s ease-in;
+	}
+}
+
+.xfn-section-description {
+	font-size: 12px;
+	color: #757575;
+	margin: 0 0 16px 0;
+	line-height: 1.4;
+}
+
+.xfn-relationships {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.xfn-category {
+	h4 {
+		font-size: 12px;
+		font-weight: 600;
+		color: #1e1e1e;
+		margin: 0 0 8px 0;
+		line-height: 1.3;
+	}
+
+	.components-button-group,
+	.xfn-button-group {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 4px;
+		align-items: flex-start;
+
+		.components-button {
+			font-size: 11px;
+			padding: 4px 8px;
+			height: auto;
+			min-height: 28px;
+			border-radius: 14px;
+			border: 1px solid #ddd;
+			background: #fff;
+			color: #1e1e1e;
+			transition: all 0.15s ease;
+			flex: 0 0 auto;
+
+			&:hover {
+				color: #0073aa;
+				border-color: #0073aa;
+				background: #f0f8ff;
+			}
+
+			&.is-pressed {
+				background: #0073aa;
+				color: white;
+				border-color: #0073aa;
+				font-weight: 500;
+			}
+
+			&:focus {
+				box-shadow: 0 0 0 2px rgba(0, 115, 170, 0.3);
+			}
+		}
+	}
+}
+
+.xfn-summary {
+	margin-top: 16px;
+	padding: 12px;
+	background: #f6f7f7;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+
+	h4 {
+		font-size: 11px;
+		font-weight: 600;
+		color: #1e1e1e;
+		margin: 0 0 6px 0;
+		line-height: 1.3;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+	}
+
+	.xfn-pills {
+		gap: 4px;
+		
+		.xfn-pill {
+			font-size: 9px;
+			padding: 3px 6px;
+			border-radius: 10px;
+		}
+	}
+}
+
+/* === LINK CONTROL INTEGRATION STYLES === */
+
+/* XFN Controls in Link Control Advanced Panel */
+.block-editor-link-control .xfn-collapsible-section {
+	margin-top: 16px;
+	border-color: #ddd;
+}
+
+.block-editor-link-control .xfn-section-toggle {
+	background: #f9f9f9;
+	border-bottom-color: #ddd;
+
+	&:hover {
+		background: #f0f0f0;
+	}
+
+	&[aria-expanded="true"] {
+		background: #f0f8ff;
+		border-bottom-color: #b3d9ff;
+	}
+}
+
+.block-editor-link-control .xfn-section-content {
+	padding: 12px;
+}
+
+.block-editor-link-control .xfn-category {
+	margin-bottom: 12px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	h4 {
+		font-size: 11px;
+		margin-bottom: 6px;
+	}
+}
+
+.block-editor-link-control .xfn-summary {
+	margin-top: 12px;
+	padding: 8px 10px;
+	background: #f6f7f7;
+
+	h4 {
+		font-size: 10px;
+		margin-bottom: 4px;
+	}
+
+	.xfn-pills {
+		gap: 3px;
+
+		.xfn-pill {
+			font-size: 8px;
+			padding: 2px 5px;
+		}
+	}
+}
+
+.block-editor-link-control .xfn-relationships {
+	gap: 12px;
+}
+
+/* Focus styles for accessibility */
+.xfn-radio-group input:focus,
+.xfn-checkbox-group input:focus {
+	box-shadow: 0 0 0 2px #0073aa;
+	border-radius: 2px;
+}
+
+.xfn-radio-group label:focus-within,
+.xfn-checkbox-group label:focus-within {
+	color: #0073aa;
+	font-weight: 500;
+}
+
+/* Accessibility improvements */
+.xfn-category-section .components-radio-control__option input:focus + label,
+.xfn-category-section .components-checkbox-control input:focus + .components-checkbox-control__label {
+	box-shadow: 0 0 0 1px #0073aa;
+	border-radius: 2px;
+}
+
+/* Ensure toolbar button is properly styled */
+.block-editor-block-controls .xfn-toolbar-button {
+	position: relative;
+
+	&.is-pressed {
+		background: #0073aa;
+		color: white;
+	}
+
+	&:focus {
+		box-shadow: inset 0 0 0 1px #fff, 0 0 0 1.5px #0073aa;
+	}
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+	.xfn-selected-summary,
+	.xfn-summary {
+		border-color: #000;
+		background: #fff;
+	}
+
+	.xfn-pill {
+		border: 1px solid #000;
+	}
+
+	.xfn-category-section,
+	.xfn-collapsible-section,
+	.xfn-toolbar-header {
+		border-color: #000;
+	}
+
+	.xfn-section-toggle {
+		border-color: #000;
+		background: #fff;
+		color: #000;
+
+		&:hover,
+		&[aria-expanded="true"] {
+			background: #000;
+			color: #fff;
+		}
+	}
+
+	.xfn-category .components-button {
+		border-color: #000;
+
+		&.is-pressed {
+			background: #000;
+			color: #fff;
+			border-color: #000;
+		}
+	}
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+	.xfn-pills {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.xfn-toolbar-popover .components-popover__content {
+		min-width: 280px;
+		max-width: 320px;
+	}
+
+	.xfn-category .components-button-group,
+	.xfn-category .xfn-button-group {
+		flex-direction: column;
+		align-items: stretch;
+
+		.components-button {
+			justify-content: flex-start;
+		}
+	}
+
+	.xfn-section-toggle {
+		padding: 10px 12px;
+		font-size: 12px;
+	}
+
+	.xfn-section-content {
+		padding: 12px;
+	}
+}
+
+/* Animation keyframes */
+@keyframes xfn-expand {
+	from {
+		opacity: 0;
+		max-height: 0;
+		transform: translateY(-5px);
+	}
+	to {
+		opacity: 1;
+		max-height: 500px;
+		transform: translateY(0);
+	}
+}
+
+@keyframes xfn-collapse {
+	from {
+		opacity: 1;
+		max-height: 500px;
+	}
+	to {
+		opacity: 0;
+		max-height: 0;
+	}
+}
+
+@keyframes xfn-fade-in {
+	from {
+		opacity: 0;
+		transform: translateY(-5px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes xfn-slide-in {
+	from {
+		opacity: 0;
+		transform: scale(0.95) translateY(-10px);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1) translateY(0);
+	}
+}
+
+/* Animation for smooth appearance */
+.xfn-selected-summary,
+.xfn-summary {
+	animation: xfn-fade-in 0.2s ease-out;
+}
+
+.xfn-toolbar-popover-content {
+	animation: xfn-slide-in 0.2s ease-out;
+}
+
+/* Ensure panels have proper spacing */
+.xfn-inspector-panel .components-panel__body-content > *:first-child {
+	margin-top: 0;
+}
+
+.xfn-inspector-panel .components-panel__body-content > *:last-child {
+	margin-bottom: 0;
+}
+
+/* Ensure XFN controls don't interfere with existing link control styling */
+.block-editor-link-control .xfn-collapsible-section {
+	border-top-color: #ddd;
+}
+
+/* Scrollbar styling for toolbar popover */
+.xfn-toolbar-popover-content::-webkit-scrollbar {
+	width: 6px;
+}
+
+.xfn-toolbar-popover-content::-webkit-scrollbar-track {
+	background: #f1f1f1;
+	border-radius: 3px;
+}
+
+.xfn-toolbar-popover-content::-webkit-scrollbar-thumb {
+	background: #c1c1c1;
+	border-radius: 3px;
+}
+
+.xfn-toolbar-popover-content::-webkit-scrollbar-thumb:hover {
+	background: #a1a1a1;
+}
+
+/* Ensure proper toggle button layout */
+.xfn-section-toggle {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 8px;
+}
+
+.xfn-section-toggle .xfn-count-badge {
+	margin-left: auto;
+	margin-right: 8px;
+}
+
+/* Improve button group spacing in collapsible sections */
+.xfn-collapsible-section .xfn-button-group {
+	gap: 6px;
+}
+
+.xfn-collapsible-section .xfn-button-group .components-button {
+	font-size: 10px;
+	padding: 3px 7px;
+	min-height: 24px;
+	border-radius: 12px;
+}
+
+/* Ensure proper nesting in link control context */
+.block-editor-link-control__settings .xfn-collapsible-section {
+	margin-top: 12px;
+}
+
+/* Make collapsible sections look consistent with WordPress design */
+.xfn-collapsible-section {
+	border-radius: 2px;
+	overflow: hidden;
+}
+
+.xfn-section-toggle {
+	border-radius: 0;
+}

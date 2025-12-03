@@ -1,0 +1,81 @@
+# XFN Link Extension - Distribution Ignore File
+# Files and directories listed here will be excluded from the plugin ZIP
+# when building for WordPress.org distribution
+
+# Version control
+/.git
+/.github
+.gitattributes
+.gitignore
+
+# Development files
+/node_modules
+/vendor
+/.vscode
+/.idea
+*.swp
+*.swo
+*~
+
+# Source files (build directory contains compiled assets)
+/src
+
+# Tests
+/tests
+/bin
+/phpunit.xml
+/phpunit.xml.dist
+/playwright.config.js
+/.phpunit.cache
+/.phpunit.result.cache
+/test-results
+/playwright-report
+
+# Build configuration
+/package.json
+/package-lock.json
+/composer.json
+/composer.lock
+/webpack.config.js
+/tsconfig.json
+/.babelrc
+/.eslintrc
+/.eslintrc.json
+/.stylelintrc
+/.stylelintrc.json
+/phpcs.xml
+/phpcs.xml.dist
+
+# Documentation (keep readme.txt for WordPress.org)
+/README.md
+/CHANGELOG.md
+/CONTRIBUTING.md
+/CODE_OF_CONDUCT.md
+/QA-TEST-PLAN.md
+/PLUGIN-DEVELOPMENT-WORKFLOW.md
+
+# WordPress.org assets (go to SVN /assets directory separately)
+/.wordpress-org
+
+# Build artifacts
+*.zip
+/dist
+/test-dist
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Temporary files
+/tmp
+/temp
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.*
+
+# Artifact from Telex
+/artefact.xml

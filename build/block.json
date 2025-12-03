@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "telex/block-xfn-link-extension",
+  "version": "1.0.0",
+  "title": "XFN Relationship Link Extension",
+  "category": "text",
+  "icon": "admin-links",
+  "description": "Extends the native Gutenberg link interface to include XFN (XHTML Friends Network) relationship options across all blocks that support links.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "xfn-relationship-link-extension",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
