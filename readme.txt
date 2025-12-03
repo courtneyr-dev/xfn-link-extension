@@ -59,16 +59,6 @@ The relationship selection interface is designed for optimal usability with mode
 * **Real-time validation**: Prevents invalid relationship combinations
 * **Smooth animations**: Fluid expand/collapse transitions
 
-### Accessibility Excellence
-Built with accessibility as a priority:
-
-* **Full keyboard navigation**: Tab, arrow keys, and standard shortcuts work throughout
-* **Collapsible accessibility**: Proper ARIA attributes for expand/collapse states
-* **Screen reader support**: Comprehensive ARIA labels and descriptions for all states
-* **High contrast compatibility**: Tested with Windows High Contrast mode
-* **Focus management**: Clear visual focus indicators and logical tab order
-* **WCAG 2.2 AA compliance**: Meets and exceeds accessibility standards
-
 ## How to Add XFN Relationships to Links
 
 ### Method 1: Using the Floating Toolbar (Recommended)
@@ -330,11 +320,4 @@ Absolutely! XFN includes professional relationships (co-worker, colleague) and c
 
 == Screenshots ==
 
-1. XFN button in floating block toolbar with collapsible relationship interface
-2. Inspector Controls panel showing comprehensive XFN relationship options with categorized sections
-3. Link Advanced panel integration with collapsible XFN section alongside existing options
-4. Collapsed XFN section showing count badge for quick status overview
-5. Expanded XFN section with button groups for relationship selection
-6. Visual relationship pills showing active selections with color coding in summary
-7. Complete relationship overview with collapsible categories in popover interface
-8. Navigation block with XFN relationships using clean collapsible design for enhanced semantic linking
+1. XFN relationship interface showing the floating toolbar with collapsible sections and relationship selection options

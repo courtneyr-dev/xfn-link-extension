@@ -42,14 +42,6 @@ The plugin provides XFN controls in three convenient locations:
 - **Button groups** for easy relationship selection with mutual exclusivity support
 - **Real-time validation** preventing invalid relationship combinations
 
-### Accessibility First
-
-- Full keyboard navigation (Tab, Space, Enter, Arrow keys)
-- Comprehensive screen reader support with ARIA labels
-- High contrast mode compatibility
-- WCAG 2.2 AA compliance
-- Focus management and visual indicators
-
 ## Requirements
 
 - **WordPress**: 6.4 or higher
@@ -280,14 +272,6 @@ The plugin intelligently manages the HTML `rel` attribute:
 5. Verify relationships appear in published HTML `rel` attribute
 6. Test keyboard navigation and screen reader support
 7. Test with Query Monitor active to check for errors
-
-### Accessibility Testing
-
-- Test with NVDA (Windows), VoiceOver (Mac), or JAWS
-- Verify keyboard navigation with Tab, Space, Enter, Arrow keys
-- Test in high contrast mode (Windows)
-- Check focus indicators and visual cues
-- Verify ARIA states are announced correctly
 
 ### Compatibility Testing
 
