@@ -34,142 +34,142 @@ import './editor.scss';
 const XFN_RELATIONSHIPS = {
 	friendship: {
 		type: 'radio',
-		label: __( 'Friendship', 'xfn-relationship-link-extension' ),
+		label: __( 'Friendship', 'link-extension-for-xfn' ),
 		description: __(
 			'Your friendship level (choose one)',
-			'xfn-relationship-link-extension'
+			'link-extension-for-xfn'
 		),
 		options: [
 			{
-				label: __( 'Contact', 'xfn-relationship-link-extension' ),
+				label: __( 'Contact', 'link-extension-for-xfn' ),
 				value: 'contact',
 			},
 			{
-				label: __( 'Acquaintance', 'xfn-relationship-link-extension' ),
+				label: __( 'Acquaintance', 'link-extension-for-xfn' ),
 				value: 'acquaintance',
 			},
 			{
-				label: __( 'Friend', 'xfn-relationship-link-extension' ),
+				label: __( 'Friend', 'link-extension-for-xfn' ),
 				value: 'friend',
 			},
 		],
 	},
 	physical: {
 		type: 'checkbox',
-		label: __( 'Physical', 'xfn-relationship-link-extension' ),
+		label: __( 'Physical', 'link-extension-for-xfn' ),
 		description: __(
 			'Have you met this person?',
-			'xfn-relationship-link-extension'
+			'link-extension-for-xfn'
 		),
 		options: [
 			{
-				label: __( 'Met', 'xfn-relationship-link-extension' ),
+				label: __( 'Met', 'link-extension-for-xfn' ),
 				value: 'met',
 			},
 		],
 	},
 	professional: {
 		type: 'checkbox',
-		label: __( 'Professional', 'xfn-relationship-link-extension' ),
+		label: __( 'Professional', 'link-extension-for-xfn' ),
 		description: __(
 			'Professional relationships',
-			'xfn-relationship-link-extension'
+			'link-extension-for-xfn'
 		),
 		options: [
 			{
-				label: __( 'Co-worker', 'xfn-relationship-link-extension' ),
+				label: __( 'Co-worker', 'link-extension-for-xfn' ),
 				value: 'co-worker',
 			},
 			{
-				label: __( 'Colleague', 'xfn-relationship-link-extension' ),
+				label: __( 'Colleague', 'link-extension-for-xfn' ),
 				value: 'colleague',
 			},
 		],
 	},
 	geographical: {
 		type: 'radio',
-		label: __( 'Geographical', 'xfn-relationship-link-extension' ),
+		label: __( 'Geographical', 'link-extension-for-xfn' ),
 		description: __(
 			'Geographical relationship',
-			'xfn-relationship-link-extension'
+			'link-extension-for-xfn'
 		),
 		options: [
 			{
-				label: __( 'Co-resident', 'xfn-relationship-link-extension' ),
+				label: __( 'Co-resident', 'link-extension-for-xfn' ),
 				value: 'co-resident',
 			},
 			{
-				label: __( 'Neighbor', 'xfn-relationship-link-extension' ),
+				label: __( 'Neighbor', 'link-extension-for-xfn' ),
 				value: 'neighbor',
 			},
 		],
 	},
 	family: {
 		type: 'radio',
-		label: __( 'Family', 'xfn-relationship-link-extension' ),
+		label: __( 'Family', 'link-extension-for-xfn' ),
 		description: __(
 			'Family relationship',
-			'xfn-relationship-link-extension'
+			'link-extension-for-xfn'
 		),
 		options: [
 			{
-				label: __( 'Child', 'xfn-relationship-link-extension' ),
+				label: __( 'Child', 'link-extension-for-xfn' ),
 				value: 'child',
 			},
 			{
-				label: __( 'Parent', 'xfn-relationship-link-extension' ),
+				label: __( 'Parent', 'link-extension-for-xfn' ),
 				value: 'parent',
 			},
 			{
-				label: __( 'Sibling', 'xfn-relationship-link-extension' ),
+				label: __( 'Sibling', 'link-extension-for-xfn' ),
 				value: 'sibling',
 			},
 			{
-				label: __( 'Spouse', 'xfn-relationship-link-extension' ),
+				label: __( 'Spouse', 'link-extension-for-xfn' ),
 				value: 'spouse',
 			},
 			{
-				label: __( 'Kin', 'xfn-relationship-link-extension' ),
+				label: __( 'Kin', 'link-extension-for-xfn' ),
 				value: 'kin',
 			},
 		],
 	},
 	romantic: {
 		type: 'checkbox',
-		label: __( 'Romantic', 'xfn-relationship-link-extension' ),
+		label: __( 'Romantic', 'link-extension-for-xfn' ),
 		description: __(
 			'Romantic relationships',
-			'xfn-relationship-link-extension'
+			'link-extension-for-xfn'
 		),
 		options: [
 			{
-				label: __( 'Muse', 'xfn-relationship-link-extension' ),
+				label: __( 'Muse', 'link-extension-for-xfn' ),
 				value: 'muse',
 			},
 			{
-				label: __( 'Crush', 'xfn-relationship-link-extension' ),
+				label: __( 'Crush', 'link-extension-for-xfn' ),
 				value: 'crush',
 			},
 			{
-				label: __( 'Date', 'xfn-relationship-link-extension' ),
+				label: __( 'Date', 'link-extension-for-xfn' ),
 				value: 'date',
 			},
 			{
-				label: __( 'Sweetheart', 'xfn-relationship-link-extension' ),
+				label: __( 'Sweetheart', 'link-extension-for-xfn' ),
 				value: 'sweetheart',
 			},
 		],
 	},
 	identity: {
 		type: 'checkbox',
-		label: __( 'Identity', 'xfn-relationship-link-extension' ),
+		label: __( 'Identity', 'link-extension-for-xfn' ),
 		description: __(
 			'Is this your own content?',
-			'xfn-relationship-link-extension'
+			'link-extension-for-xfn'
 		),
 		options: [
 			{
-				label: __( 'Me', 'xfn-relationship-link-extension' ),
+				label: __( 'Me', 'link-extension-for-xfn' ),
 				value: 'me',
 			},
 		],
@@ -311,7 +311,7 @@ const XFNCollapsibleSection = ( {
 				iconPosition="right"
 				variant="tertiary"
 			>
-				{ __( 'XFN', 'xfn-relationship-link-extension' ) }
+				{ __( 'XFN', 'link-extension-for-xfn' ) }
 				{ xfnValues.length > 0 && (
 					<span className="xfn-count-badge">
 						{ xfnValues.length }
@@ -324,7 +324,7 @@ const XFNCollapsibleSection = ( {
 					<p className="xfn-section-description">
 						{ __(
 							'Describe your relationship to this person or organization',
-							'xfn-relationship-link-extension'
+							'link-extension-for-xfn'
 						) }
 					</p>
 
@@ -359,7 +359,7 @@ const XFNCollapsibleSection = ( {
 												>
 													{ __(
 														'None',
-														'xfn-relationship-link-extension'
+														'link-extension-for-xfn'
 													) }
 												</Button>
 												{ category.options.map(
@@ -429,7 +429,7 @@ const XFNCollapsibleSection = ( {
 							<h4>
 								{ __(
 									'Active Relationships:',
-									'xfn-relationship-link-extension'
+									'link-extension-for-xfn'
 								) }
 							</h4>
 							<div className="xfn-pills">
@@ -479,7 +479,7 @@ const XFNToolbarPopover = ( {
 					<h3>
 						{ __(
 							'Link Settings',
-							'xfn-relationship-link-extension'
+							'link-extension-for-xfn'
 						) }
 					</h3>
 				</div>
@@ -540,7 +540,7 @@ const XFNInspectorControls = ( { attributes, setAttributes, name } ) => {
 			<PanelBody
 				title={ __(
 					'XFN Relationships',
-					'xfn-relationship-link-extension'
+					'link-extension-for-xfn'
 				) }
 				initialOpen={ false }
 				className="xfn-inspector-panel"
@@ -548,7 +548,7 @@ const XFNInspectorControls = ( { attributes, setAttributes, name } ) => {
 				<p className="xfn-panel-description">
 					{ __(
 						'Describe your relationship to the people or organizations you link to using XFN (XHTML Friends Network) markup.',
-						'xfn-relationship-link-extension'
+						'link-extension-for-xfn'
 					) }
 				</p>
 
@@ -563,7 +563,7 @@ const XFNInspectorControls = ( { attributes, setAttributes, name } ) => {
 								{
 									label: __(
 										'None',
-										'xfn-relationship-link-extension'
+										'link-extension-for-xfn'
 									),
 									value: '',
 								},
@@ -629,7 +629,7 @@ const XFNInspectorControls = ( { attributes, setAttributes, name } ) => {
 						<h4>
 							{ __(
 								'Selected Relationships:',
-								'xfn-relationship-link-extension'
+								'link-extension-for-xfn'
 							) }
 						</h4>
 						<div className="xfn-pills">
@@ -745,7 +745,7 @@ function createXFNCollapsibleHTML( xfnValues ) {
 			<p class="xfn-section-description">
 				${ __(
 					'Describe your relationship to this person or organization',
-					'xfn-relationship-link-extension'
+					'link-extension-for-xfn'
 				) }
 			</p>
 	`;
@@ -766,7 +766,7 @@ function createXFNCollapsibleHTML( xfnValues ) {
 					selectedValue === '' ? 'is-pressed' : ''
 				}" data-value="">${ __(
 					'None',
-					'xfn-relationship-link-extension'
+					'link-extension-for-xfn'
 				) }</button>`;
 
 				category.options.forEach( ( option ) => {
@@ -799,7 +799,7 @@ function createXFNCollapsibleHTML( xfnValues ) {
 		html += `<div class="xfn-summary">`;
 		html += `<h4>${ __(
 			'Active Relationships:',
-			'xfn-relationship-link-extension'
+			'link-extension-for-xfn'
 		) }</h4>`;
 		html += `<div class="xfn-pills">`;
 		xfnValues.forEach( ( rel ) => {
@@ -922,7 +922,7 @@ function updateXFNSummary( container ) {
 
 	let html = `<h4>${ __(
 		'Active Relationships:',
-		'xfn-relationship-link-extension'
+		'link-extension-for-xfn'
 	) }</h4>`;
 	html += `<div class="xfn-pills">`;
 	currentXFNValues.forEach( ( rel ) => {
@@ -1066,7 +1066,7 @@ const withXFNControls = createHigherOrderComponent( ( BlockEdit ) => {
 						icon={ link }
 						label={ __(
 							'XFN Relationships',
-							'xfn-relationship-link-extension'
+							'link-extension-for-xfn'
 						) }
 						onClick={ () =>
 							setXFNPopoverVisible( ! isXFNPopoverVisible )
@@ -1074,7 +1074,7 @@ const withXFNControls = createHigherOrderComponent( ( BlockEdit ) => {
 						isPressed={ isXFNPopoverVisible }
 						className="xfn-toolbar-button"
 					>
-						{ __( 'XFN', 'xfn-relationship-link-extension' ) }
+						{ __( 'XFN', 'link-extension-for-xfn' ) }
 					</Button>
 				</BlockControls>
 				<XFNToolbarPopover

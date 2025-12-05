@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name:       XFN Relationship Link Extension
- * Plugin URI:        https://github.com/automattic/xfn-link-extension
+ * Plugin Name:       Link Extension for XFN
+ * Plugin URI:        https://github.com/courtneyr-dev/xfn-link-extension
  * Description:       Extends the native Gutenberg link interface to include XFN (XHTML Friends Network) relationship options across all blocks that support links. Features floating toolbar access, Inspector Controls integration, and Link Advanced panel support.
  * Version:           1.0.0
  * Requires at least: 6.4
@@ -10,9 +10,9 @@
  * Author:            Courtney Robertson
  * License:           GPLv2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       xfn-relationship-link-extension
+ * Text Domain:       link-extension-for-xfn
  *
- * @package XFNLinkExtension
+ * @package LinkExtensionForXFN
  */
 
 // Prevent direct access
@@ -91,7 +91,7 @@ class XFN_Link_Extension {
 	public function enqueue_block_editor_assets() {
 		// Enqueue main JavaScript file
 		wp_enqueue_script(
-			'xfn-relationship-link-extension',
+			'link-extension-for-xfn',
 			XFN_LINK_EXTENSION_PLUGIN_URL . 'build/index.js',
 			array(
 				'wp-blocks',
@@ -118,24 +118,24 @@ class XFN_Link_Extension {
 
 		// Localize script with XFN relationship data and translations
 		wp_localize_script(
-			'xfn-relationship-link-extension',
+			'link-extension-for-xfn',
 			'xfnLinkExtension',
 			array(
 				'relationships' => $this->get_xfn_relationships(),
 				'version' => XFN_LINK_EXTENSION_VERSION,
 				'nonce' => wp_create_nonce( 'xfn_link_extension' ),
 				'interfaces' => array(
-					'toolbar' => __( 'Floating Toolbar', 'xfn-relationship-link-extension' ),
-					'inspector' => __( 'Inspector Controls', 'xfn-relationship-link-extension' ),
-					'advanced' => __( 'Link Advanced Panel', 'xfn-relationship-link-extension' ),
+					'toolbar' => __( 'Floating Toolbar', 'link-extension-for-xfn' ),
+					'inspector' => __( 'Inspector Controls', 'link-extension-for-xfn' ),
+					'advanced' => __( 'Link Advanced Panel', 'link-extension-for-xfn' ),
 				),
 			)
 		);
 
 		// Set script translations for JavaScript
 		wp_set_script_translations(
-			'xfn-relationship-link-extension',
-			'xfn-relationship-link-extension',
+			'link-extension-for-xfn',
+			'link-extension-for-xfn',
 			XFN_LINK_EXTENSION_PLUGIN_PATH . 'languages'
 		);
 	}
@@ -153,72 +153,72 @@ class XFN_Link_Extension {
 		return array(
 			'friendship' => array(
 				'type' => 'radio',
-				'label' => __( 'Friendship', 'xfn-relationship-link-extension' ),
-				'description' => __( 'Your friendship level with this person (choose one)', 'xfn-relationship-link-extension' ),
+				'label' => __( 'Friendship', 'link-extension-for-xfn' ),
+				'description' => __( 'Your friendship level with this person (choose one)', 'link-extension-for-xfn' ),
 				'options' => array(
-					'contact' => __( 'Contact', 'xfn-relationship-link-extension' ),
-					'acquaintance' => __( 'Acquaintance', 'xfn-relationship-link-extension' ),
-					'friend' => __( 'Friend', 'xfn-relationship-link-extension' ),
+					'contact' => __( 'Contact', 'link-extension-for-xfn' ),
+					'acquaintance' => __( 'Acquaintance', 'link-extension-for-xfn' ),
+					'friend' => __( 'Friend', 'link-extension-for-xfn' ),
 				),
 				'default' => null,
 			),
 			'physical' => array(
 				'type' => 'checkbox',
-				'label' => __( 'Physical', 'xfn-relationship-link-extension' ),
-				'description' => __( 'Have you met this person in real life?', 'xfn-relationship-link-extension' ),
+				'label' => __( 'Physical', 'link-extension-for-xfn' ),
+				'description' => __( 'Have you met this person in real life?', 'link-extension-for-xfn' ),
 				'options' => array(
-					'met' => __( 'Met', 'xfn-relationship-link-extension' ),
+					'met' => __( 'Met', 'link-extension-for-xfn' ),
 				),
 			),
 			'professional' => array(
 				'type' => 'checkbox',
-				'label' => __( 'Professional', 'xfn-relationship-link-extension' ),
-				'description' => __( 'Professional relationships (multiple allowed)', 'xfn-relationship-link-extension' ),
+				'label' => __( 'Professional', 'link-extension-for-xfn' ),
+				'description' => __( 'Professional relationships (multiple allowed)', 'link-extension-for-xfn' ),
 				'options' => array(
-					'co-worker' => __( 'Co-worker', 'xfn-relationship-link-extension' ),
-					'colleague' => __( 'Colleague', 'xfn-relationship-link-extension' ),
+					'co-worker' => __( 'Co-worker', 'link-extension-for-xfn' ),
+					'colleague' => __( 'Colleague', 'link-extension-for-xfn' ),
 				),
 			),
 			'geographical' => array(
 				'type' => 'radio',
-				'label' => __( 'Geographical', 'xfn-relationship-link-extension' ),
-				'description' => __( 'Your geographical relationship (choose one)', 'xfn-relationship-link-extension' ),
+				'label' => __( 'Geographical', 'link-extension-for-xfn' ),
+				'description' => __( 'Your geographical relationship (choose one)', 'link-extension-for-xfn' ),
 				'options' => array(
-					'co-resident' => __( 'Co-resident', 'xfn-relationship-link-extension' ),
-					'neighbor' => __( 'Neighbor', 'xfn-relationship-link-extension' ),
+					'co-resident' => __( 'Co-resident', 'link-extension-for-xfn' ),
+					'neighbor' => __( 'Neighbor', 'link-extension-for-xfn' ),
 				),
 				'default' => null,
 			),
 			'family' => array(
 				'type' => 'radio',
-				'label' => __( 'Family', 'xfn-relationship-link-extension' ),
-				'description' => __( 'Family relationship (choose one)', 'xfn-relationship-link-extension' ),
+				'label' => __( 'Family', 'link-extension-for-xfn' ),
+				'description' => __( 'Family relationship (choose one)', 'link-extension-for-xfn' ),
 				'options' => array(
-					'child' => __( 'Child', 'xfn-relationship-link-extension' ),
-					'parent' => __( 'Parent', 'xfn-relationship-link-extension' ),
-					'sibling' => __( 'Sibling', 'xfn-relationship-link-extension' ),
-					'spouse' => __( 'Spouse', 'xfn-relationship-link-extension' ),
-					'kin' => __( 'Kin', 'xfn-relationship-link-extension' ),
+					'child' => __( 'Child', 'link-extension-for-xfn' ),
+					'parent' => __( 'Parent', 'link-extension-for-xfn' ),
+					'sibling' => __( 'Sibling', 'link-extension-for-xfn' ),
+					'spouse' => __( 'Spouse', 'link-extension-for-xfn' ),
+					'kin' => __( 'Kin', 'link-extension-for-xfn' ),
 				),
 				'default' => null,
 			),
 			'romantic' => array(
 				'type' => 'checkbox',
-				'label' => __( 'Romantic', 'xfn-relationship-link-extension' ),
-				'description' => __( 'Romantic relationships (multiple allowed)', 'xfn-relationship-link-extension' ),
+				'label' => __( 'Romantic', 'link-extension-for-xfn' ),
+				'description' => __( 'Romantic relationships (multiple allowed)', 'link-extension-for-xfn' ),
 				'options' => array(
-					'muse' => __( 'Muse', 'xfn-relationship-link-extension' ),
-					'crush' => __( 'Crush', 'xfn-relationship-link-extension' ),
-					'date' => __( 'Date', 'xfn-relationship-link-extension' ),
-					'sweetheart' => __( 'Sweetheart', 'xfn-relationship-link-extension' ),
+					'muse' => __( 'Muse', 'link-extension-for-xfn' ),
+					'crush' => __( 'Crush', 'link-extension-for-xfn' ),
+					'date' => __( 'Date', 'link-extension-for-xfn' ),
+					'sweetheart' => __( 'Sweetheart', 'link-extension-for-xfn' ),
 				),
 			),
 			'identity' => array(
 				'type' => 'checkbox',
-				'label' => __( 'Identity', 'xfn-relationship-link-extension' ),
-				'description' => __( 'Is this link to your own content?', 'xfn-relationship-link-extension' ),
+				'label' => __( 'Identity', 'link-extension-for-xfn' ),
+				'description' => __( 'Is this link to your own content?', 'link-extension-for-xfn' ),
 				'options' => array(
-					'me' => __( 'Me', 'xfn-relationship-link-extension' ),
+					'me' => __( 'Me', 'link-extension-for-xfn' ),
 				),
 			),
 		);
@@ -370,8 +370,8 @@ function xfn_link_extension_activate() {
 	if ( version_compare( get_bloginfo( 'version' ), '6.4', '<' ) ) {
 		deactivate_plugins( plugin_basename( __FILE__ ) );
 		wp_die(
-			esc_html__( 'XFN Link Extension requires WordPress 6.4 or higher.', 'xfn-relationship-link-extension' ),
-			esc_html__( 'Plugin Activation Error', 'xfn-relationship-link-extension' ),
+			esc_html__( 'XFN Link Extension requires WordPress 6.4 or higher.', 'link-extension-for-xfn' ),
+			esc_html__( 'Plugin Activation Error', 'link-extension-for-xfn' ),
 			array( 'back_link' => true )
 		);
 	}
@@ -379,8 +379,8 @@ function xfn_link_extension_activate() {
 	if ( version_compare( PHP_VERSION, '7.4', '<' ) ) {
 		deactivate_plugins( plugin_basename( __FILE__ ) );
 		wp_die(
-			esc_html__( 'XFN Link Extension requires PHP 7.4 or higher.', 'xfn-relationship-link-extension' ),
-			esc_html__( 'Plugin Activation Error', 'xfn-relationship-link-extension' ),
+			esc_html__( 'XFN Link Extension requires PHP 7.4 or higher.', 'link-extension-for-xfn' ),
+			esc_html__( 'Plugin Activation Error', 'link-extension-for-xfn' ),
 			array( 'back_link' => true )
 		);
 	}

@@ -1,4 +1,4 @@
-=== XFN Relationship Link Extension ===
+=== Link Extension for XFN ===
 
 Contributors:      courane01
 Tags:              xfn, links, relationships, accessibility, gutenberg

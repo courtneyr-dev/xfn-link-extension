@@ -1,8 +1,8 @@
 {
-	"name": "block-xfn-link-extension",
+	"name": "link-extension-for-xfn",
 	"version": "1.0.0",
 	"description": "Extends the native Gutenberg link interface to include XFN (XHTML Friends Network) relationship options across all blocks that support links.",
-	"author": "telex block authoring tool",
+	"author": "Courtney Robertson",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",
 	"scripts": {
