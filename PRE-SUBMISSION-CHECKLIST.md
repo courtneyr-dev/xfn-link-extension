@@ -1,6 +1,6 @@
 # WordPress.org Submission Checklist - XFN Link Extension
 
-**Plugin**: XFN Relationship Link Extension
+**Plugin**: Link Extension for XFN
 **Version**: 1.0.0
 **Author**: Courtney Robertson (courane01)
 **Submission Date**: December 2024
@@ -18,7 +18,7 @@ This comprehensive checklist ensures your plugin meets all WordPress.org require
 ## ✅ PHASE 1: Plugin Information
 
 ### Basic Information
-- [x] **Plugin Name**: XFN Relationship Link Extension
+- [x] **Plugin Name**: Link Extension for XFN
 - [x] **Plugin Slug**: `xfn-link-extension`
 - [x] **Version**: 1.0.0
 - [x] **Author**: Courtney Robertson

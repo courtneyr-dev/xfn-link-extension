@@ -1,6 +1,6 @@
 # WordPress Coding Standards - Compliance Report
 
-**Plugin**: XFN Relationship Link Extension
+**Plugin**: Link Extension for XFN
 **Version**: 1.0.0
 **Review Date**: December 1, 2024
 **Standards**: [WordPress PHP Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/)
@@ -34,8 +34,8 @@ The XFN Link Extension plugin demonstrates strong adherence to WordPress Coding 
 ```php
 <?php
 /**
- * Plugin Name:       XFN Relationship Link Extension
- * Plugin URI:        https://github.com/automattic/xfn-link-extension
+ * Plugin Name:       Link Extension for XFN
+ * Plugin URI:        https://github.com/courtneyr-dev/xfn-link-extension
  * Description:       ...
  * Version:           1.0.0
  * ...

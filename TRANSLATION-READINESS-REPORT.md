@@ -1,6 +1,6 @@
 # Translation Readiness Report - XFN Link Extension
 
-**Plugin**: XFN Relationship Link Extension
+**Plugin**: Link Extension for XFN
 **Version**: 1.0.0
 **Text Domain**: `xfn-link-extension`
 **Review Date**: December 1, 2024

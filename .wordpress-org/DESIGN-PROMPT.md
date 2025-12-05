@@ -2,7 +2,7 @@
 
 ## Plugin Overview
 
-**Name**: XFN Relationship Link Extension
+**Name**: Link Extension for XFN
 **Tagline**: Add XFN relationships to any WordPress block with links
 **Purpose**: Extends WordPress block editor link interface with XFN (XHTML Friends Network) relationship options
 **Target Audience**: WordPress content creators, bloggers, and developers who want to add semantic relationship metadata to their links
@@ -83,7 +83,7 @@ Both use same design, just different resolutions.
 ### Layout Structure
 
 **Left Side (50%)**:
-- Plugin name: "XFN Relationship Link Extension"
+- Plugin name: "Link Extension for XFN"
 - Tagline: "Add XFN relationships to any WordPress block with links"
 - Subtle feature highlights (optional)
 
@@ -280,7 +280,7 @@ Before saving:
 
 ## Example Text for Banners
 
-**Main Heading**: XFN Relationship Link Extension
+**Main Heading**: Link Extension for XFN
 **Tagline Options**:
 - "Add XFN relationships to any WordPress block with links"
 - "Semantic web relationships for WordPress"
@@ -323,6 +323,6 @@ Before considering assets "done":
 ---
 
 **Author**: Courtney Robertson
-**Plugin**: XFN Relationship Link Extension
+**Plugin**: Link Extension for XFN
 **Version**: 1.0.0
 **Last Updated**: December 2024

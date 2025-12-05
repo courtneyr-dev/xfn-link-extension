@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to the XFN Relationship Link Extension will be documented in this file.
+All notable changes to the Link Extension for XFN will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -18,7 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2025-12-01
 
 ### Added
-- **Initial release** of XFN Relationship Link Extension
+- **Initial release** of Link Extension for XFN
 - **Complete XFN 1.1 specification support** with all relationship categories:
   - Friendship relationships (contact, acquaintance, friend)
   - Physical relationships (met)
@@ -124,7 +124,7 @@ This project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html):
 
 If you discover any bugs or have feature requests, please report them on:
 
-- [GitHub Issues](https://github.com/automattic/xfn-link-extension/issues)
+- [GitHub Issues](https://github.com/courtneyr-dev/xfn-link-extension/issues)
 - [WordPress.org Support Forum](https://wordpress.org/support/plugin/xfn-link-extension/)
 
 ## Contributing
@@ -133,5 +133,5 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute to th
 
 ---
 
-[Unreleased]: https://github.com/automattic/xfn-link-extension/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/automattic/xfn-link-extension/releases/tag/v1.0.0
+[Unreleased]: https://github.com/courtneyr-dev/xfn-link-extension/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/courtneyr-dev/xfn-link-extension/releases/tag/v1.0.0

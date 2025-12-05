@@ -1,4 +1,4 @@
-# XFN Relationship Link Extension
+# Link Extension for XFN
 
 Extends the native WordPress block editor link interface to include XFN (XHTML Friends Network) relationship options across all blocks that support links.
 
@@ -8,7 +8,7 @@ Extends the native WordPress block editor link interface to include XFN (XHTML F
 
 ## Overview
 
-The XFN Relationship Link Extension seamlessly integrates XFN (XHTML Friends Network) relationship options into WordPress's native link interface. This plugin enhances every block that supports links—including Paragraph, Button, Navigation, List, and more—with comprehensive relationship tagging capabilities through an intuitive collapsible interface.
+The Link Extension for XFN seamlessly integrates XFN (XHTML Friends Network) relationship options into WordPress's native link interface. This plugin enhances every block that supports links—including Paragraph, Button, Navigation, List, and more—with comprehensive relationship tagging capabilities through an intuitive collapsible interface.
 
 XFN is a simple way to represent human relationships using hyperlinks. By adding XFN relationships to your links, you can indicate how you're connected to the people and organizations you link to, creating a more semantic and meaningful web.
 
@@ -44,7 +44,7 @@ The plugin provides XFN controls in three convenient locations:
 
 ## Screenshot
 
-![XFN Relationship Link Extension interface showing the floating toolbar with collapsible sections, relationship selection buttons organized by category, and visual relationship pills displaying active selections](.wordpress-org/screenshot-1.png)
+![Link Extension for XFN interface showing the floating toolbar with collapsible sections, relationship selection buttons organized by category, and visual relationship pills displaying active selections](.wordpress-org/screenshot-1.png)
 
 *The XFN interface in action: Floating toolbar with expandable relationship categories, button groups for easy selection, and visual pills showing active relationships at a glance.*
 
@@ -68,7 +68,7 @@ The plugin provides XFN controls in three convenient locations:
 
 ```bash
 # Clone the repository
-git clone https://github.com/automattic/xfn-link-extension.git
+git clone https://github.com/courtneyr-dev/xfn-link-extension.git
 cd xfn-link-extension
 
 # Install dependencies
@@ -317,9 +317,9 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 
 ## Support
 
-- **WordPress.org Support Forum**: [Plugin Support](https://wordpress.org/support/plugin/xfn-link-extension/)
-- **GitHub Issues**: [Report bugs or request features](https://github.com/automattic/xfn-link-extension/issues)
-- **Documentation**: [WordPress.org Plugin Page](https://wordpress.org/plugins/xfn-link-extension/)
+- **WordPress.org Support Forum**: [Plugin Support](https://wordpress.org/support/plugin/link-extension-for-xfn/)
+- **GitHub Issues**: [Report bugs or request features](https://github.com/courtneyr-dev/xfn-link-extension/issues)
+- **Documentation**: [WordPress.org Plugin Page](https://wordpress.org/plugins/link-extension-for-xfn/)
 
 ## License
 

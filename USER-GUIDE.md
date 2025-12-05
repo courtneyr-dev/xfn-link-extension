@@ -1,4 +1,4 @@
-# XFN Relationship Link Extension - User Guide
+# Link Extension for XFN - User Guide
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@
 
 ## Introduction
 
-The XFN Relationship Link Extension makes it easy to add semantic relationship metadata to your WordPress links. This plugin integrates seamlessly with the WordPress block editor (Gutenberg) to help you describe your connections to the people and organizations you link to.
+The Link Extension for XFN makes it easy to add semantic relationship metadata to your WordPress links. This plugin integrates seamlessly with the WordPress block editor (Gutenberg) to help you describe your connections to the people and organizations you link to.
 
 ### Who is this plugin for?
 
@@ -62,7 +62,7 @@ This tells browsers and search engines that John Smith is a friend you've met in
 ### From WordPress Admin
 
 1. Go to **Plugins** → **Add New**
-2. Search for "XFN Relationship Link Extension"
+2. Search for "Link Extension for XFN"
 3. Click **Install Now**
 4. Click **Activate**
 

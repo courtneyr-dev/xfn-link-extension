@@ -371,7 +371,7 @@ Once your plugin is approved:
 
 ---
 
-**Plugin**: XFN Relationship Link Extension
+**Plugin**: Link Extension for XFN
 **Author**: Courtney Robertson (courane01)
 **Version**: 1.0.0
 **Last Updated**: December 2024

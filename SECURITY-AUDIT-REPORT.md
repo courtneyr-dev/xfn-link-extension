@@ -1,6 +1,6 @@
 # XFN Link Extension - Security Audit Report
 
-**Plugin**: XFN Relationship Link Extension
+**Plugin**: Link Extension for XFN
 **Version**: 1.0.0
 **Audit Date**: December 1, 2024
 **Auditor**: Automated Security Review (WordPress.org Submission Preparation)

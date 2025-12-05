@@ -116,7 +116,7 @@ Current placeholder information that needs to be updated:
 
 1. **Author**: WordPress Telex (verify if this is correct)
 2. **Author URI**: (currently not set in main plugin file line 10)
-3. **Plugin URI**: Currently set to https://github.com/automattic/xfn-link-extension
+3. **Plugin URI**: Currently set to https://github.com/courtneyr-dev/xfn-link-extension
 4. **Contributors in readme.txt**: Change from "WordPress Telex" to actual WordPress.org username
 
 ## Build Verification

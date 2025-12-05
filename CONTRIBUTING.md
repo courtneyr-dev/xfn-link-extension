@@ -1,6 +1,6 @@
-# Contributing to XFN Relationship Link Extension
+# Contributing to Link Extension for XFN
 
-Thank you for considering contributing to the XFN Relationship Link Extension! This document provides guidelines and instructions for contributing.
+Thank you for considering contributing to the Link Extension for XFN! This document provides guidelines and instructions for contributing.
 
 ## Code of Conduct
 
@@ -260,4 +260,4 @@ All contributors will be recognized in:
 - CHANGELOG.md for their contributions
 - Plugin credits (for significant contributions)
 
-Thank you for contributing to the XFN Relationship Link Extension! 🎉
+Thank you for contributing to the Link Extension for XFN! 🎉

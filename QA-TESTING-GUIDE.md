@@ -1,4 +1,4 @@
-# XFN Relationship Link Extension - QA Testing Guide
+# Link Extension for XFN - QA Testing Guide
 
 ## Table of Contents
 
@@ -135,7 +135,7 @@ Before starting tests, verify:
 
 **Steps**:
 1. Navigate to Plugins → Installed Plugins
-2. Find "XFN Relationship Link Extension"
+2. Find "Link Extension for XFN"
 3. Click "Activate"
 4. Verify activation message appears
 
